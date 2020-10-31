@@ -6,7 +6,7 @@ maven 'Maven3'
 stages {
 stage('Build') {
 steps {
-mvn clean package
+bat 'mvn clean package'
 }
 }
 }
