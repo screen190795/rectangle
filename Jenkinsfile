@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'echo %M3_HOME%'
+                sh 'echo ${M3_HOME}'
             }
         }
     }
