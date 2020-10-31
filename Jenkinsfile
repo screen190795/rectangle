@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh "mvn test"
+                bat "${mvnHome}\\bin\\mvn -B verify"
             }
         }
     }
