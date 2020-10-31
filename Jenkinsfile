@@ -6,7 +6,7 @@ maven 'Maven3'
 stages {
 stage('Build') {
 steps {
-sh 'mvn --batch-mode compile'
+sh 'mvn --batch-mode clean package'
 }
 }
 }
