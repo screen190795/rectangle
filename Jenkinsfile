@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'echo %PATH%'
+                bat encoding: 'UTF-8', script: 'echo %PATH%'
             }
         }
     }
