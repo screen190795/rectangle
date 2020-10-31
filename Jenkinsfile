@@ -5,9 +5,9 @@ pipeline {
     }
     stages {
         stage('Build') {
-            steps {
-                sh 'echo ${M3_HOME}'
-            }
+             withMaven {
+                  sh "mvn clean verify"
+                }
         }
     }
 }
