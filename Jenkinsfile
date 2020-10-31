@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat "mvn -B verify"
+                bat "${M3_HOME}\\bin\\mvn -B verify"
             }
         }
     }
